@@ -7,7 +7,9 @@ app.use("/test",(req,res)=>{
 app.use("/hello",(req,res)=>{
     res.send("Hello ji request from server");
 })
-
+app.use("/",(req,res)=>{
+    res.send("baap")
+})
 app.listen(4500,()=>{
     console.log("server is running successfully on port 4500");
 })
